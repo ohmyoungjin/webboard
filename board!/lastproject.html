@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lastproject.html</title>
+    <style>
+        .mang{color: red; 
+            margin-left: 20px}
+        .mang2{
+            margin: auto;
+            width: 800px;
+         background-color: white;
+        }
+        .mang3{color:gray;
+        width: 500px;
+        height: 50px;
+        margin-left: 20px;}
+        .mang4{color:gray;
+        width: 300px;
+        height: 50px;
+        margin-left: 20px}
+        .mang5{width :190px;
+        height:50px;
+        margin-left: 20px}
+        .mang6{width :600px;
+        height:150px;
+        margin-left: 20px
+        }
+        .mang7{width :100px;
+        height:50px;
+        border:1px solid;
+        }
+        .mang8{background-color: lightskyblue;
+            width :100px;
+        height:50px;
+        border:1px solid;}
+        .main{margin-left: 20px}
+
+    </style>
+    <script>
+        function idcheck(){
+            var a=myform.id.value;
+            if(a==""||a==null)
+            document.getElementById("id_ch").innerHTML="<font style='font-size:12pt; color:red'>*아이디를 입력하세요*</font>";         
+ 		myform.id.focus(); 
+ 		return false;
+        }
+    </script>
+</head>
+<body>
+    
+    <div style="background-color:silver;">
+        <form name="myform">
+        <h2 align="center">회원가입</h2>
+    <h4 align=right><div class="mang" style=margin-right:70px;>*표시는 필수 입력 항목입니다</div></h4>
+    
+        <div class="mang2">
+           
+            
+            <p></p>
+            <div class="main"><font style="color: gray"> 본인 예약만 가능합니다<br>
+            *만 14세 미만 소아청소년 회원가입시, 보호자(법적 대리인)의 본인 인증이 필요합니다.</font>
+            </div>
+            <p></p>
+                <div><font class="mang">*</font>아이디<br>
+                    <input type="text" class="mang3" name="id" id="id">
+                    <span id="id_ch"></span>
+                </div>
+                
+                <p></p>
+                <div><font class="mang">*</font>비밀번호<br>
+                    <input type="text" value="영문 대소문자+숫자 8자 이상" class="mang3" name="pass" id="pass">
+                    <P></P>
+                    <input type="text" value="영문 대소문자+숫자 8자 이상" class="mang3">
+                </div>
+                <p></p>
+            
+                    <div style="float:left;"><font class="mang">*</font>이름<br>
+                        <input type="text" value="영문 대소문자+숫자 8자 이상" class="mang4">
+                    </div>
+                <p></p>
+                <div style="float:left;"><font class="mang">*</font>닉네임<br>
+                    <input type="text" value="영문 대소문자+숫자 8자 이상" class="mang4">
+                </div> 
+                
+        
+       
+    </div>
+        <p>    
+        </p>
+   
+    
+        <br>
+        
+       <div align="center">
+           <input type="button" value="확인" class="mang8" onclick="idcheck()">
+            <input type="button" value="취소" class="mang7" >
+       </div>
+        </p>
+    </form>
+    </div>
+
+</body>
+</html>
